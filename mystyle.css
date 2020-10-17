@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 50px;
+    background-color: plum;
+}
+
+h1 {
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+}
+
+.mini-bio {
+    text-align: center;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+}
