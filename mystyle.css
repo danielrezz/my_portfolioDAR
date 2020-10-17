@@ -63,6 +63,7 @@ img {
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
   }
+  }
 
   @keyframes fadeIn {
     0% {
@@ -106,4 +107,16 @@ img {
     }
     100% {
       opacity:.7;
+    }
+  }
+
+  .about-me {
+    font-size: 30px;
+    width: 90%;
+    z-index: -1;
+    padding: 150px;
+    background-color: #dddddd;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50%;
   }
