@@ -11,13 +11,26 @@ body {
 }
 
 h1 {
+    font-size: 80px;
     width: 100%;
     letter-spacing: 2px;
     text-align: center;
     padding: 20px;
 }
 
+.secret-text {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    font-size: 84px;
+    color: white;
+    opacity: .7;
+    text-shadow: 0 0 3px #ffffff;
+    z-index: -1;
+}
+
 .mini-bio {
+    font-size: 20px;
     text-align: center;
     line-height: 35px;
     display: flex;
@@ -27,7 +40,70 @@ h1 {
 
 li {
     text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px white;
     list-style-type: none;
     margin: 0;
     padding: 25px;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    width: 30%;
+    border: 15px solid #ddd;
+    border-radius: 50%;
+    border-bottom-right-radius: 10px;
+}
+
+.secret-text {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:.7;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:.7;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:.7;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:.7;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:.7;
+  }
