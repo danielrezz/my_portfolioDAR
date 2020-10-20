@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 180px;
     width: 100%;
     letter-spacing: 2px;
     text-align: center;
@@ -21,31 +21,51 @@ h1 {
 
 .secret-text {
     position: absolute;
+    text-align: center;
     top: 0;
-    right: 0px;
-    font-size: 84px;
+    font-size: 184px;
     color: white;
     opacity: .7;
     text-shadow: 0 0 3px #ffffff;
     z-index: -1;
+    width: 100%
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
 }
 
 .mini-bio {
-    font-size: 20px;
+    font-size: 46px;
     text-align: center;
-    line-height: 35px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 25px 100px 100px 100px;
+    line-height: 2;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
-li {
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 2px 2px 5px white;
-    list-style-type: none;
-    margin: 0;
-    padding: 25px;
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.workbutton {
+  font-size: 70px;
+  border: none;
+  background: none;
+  opacity: 0.6;
+  transition-duration: 0.4s;
+  outline: 0;
+}
+
+.workbutton:hover {
+  text-shadow: 4px 4px 5px #ffffff;
+  opacity: 1;
 }
 
 img {
@@ -121,9 +141,18 @@ img {
     padding: 150px;
     background-color: #dddddd;
     position: absolute;
-    bottom: -10px;
     border-radius: 50%;
-    bottom: 100px;
+    bottom: 220px;
+    left: 100px;
+    min-width: 400px; /* Minimum width of your wrapper element */
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .fullcloud {
+    min-width: 100px; /* Minimum width of your wrapper element */
+    overflow: hidden;
+    display: inline-block;
   }
 
   .cloud1 {
@@ -229,3 +258,7 @@ img {
     bottom: 1%;
     left: 45%;
   }
+
+footer {
+  text-align: center;
+}
