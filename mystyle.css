@@ -39,23 +39,24 @@ header h1 {
 .mini-bio {
     font-size: 46px;
     text-align: center;
-    position: relative;
-    left: 10%;
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 25px 100px 100px 100px;
-    line-height: 2;
     display: flex;
     justify-content: center;
+    left: 10%;
+    margin-bottom: 20px;
+    width: 60%;
+    padding: 25px 100px 100px 100px;
+    line-height: 2;
 }
 
-nav {
+.threebuttons {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
+  float: left;
 }
 
 .workbutton {
-  font-size: 70px;
+  font-size: 100px;
   border: none;
   background: none;
   opacity: 0.6;
@@ -64,6 +65,34 @@ nav {
 }
 
 .workbutton:hover {
+  text-shadow: 4px 4px 5px #ffffff;
+  opacity: 1;
+}
+
+.contactbutton {
+  font-size: 100px;
+  border: none;
+  background: none;
+  opacity: 0.6;
+  transition-duration: 0.4s;
+  outline: 0;
+}
+
+.contactbutton:hover {
+  text-shadow: 4px 4px 5px #ffffff;
+  opacity: 1;
+}
+
+.aboutbutton {
+  font-size: 100px;
+  border: none;
+  background: none;
+  opacity: 0.6;
+  transition-duration: 0.4s;
+  outline: 0;
+}
+
+.aboutbutton:hover {
   text-shadow: 4px 4px 5px #ffffff;
   opacity: 1;
 }
