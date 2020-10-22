@@ -42,7 +42,7 @@ header h1 {
     text-shadow: 0.5px 0.5px 5px #ffffff;
     position: relative;
     text-align: center;
-    margin-bottom: 500px;
+    margin-bottom: 300px;
     top: 60px;
     left: 25%;
     width: 50%;
@@ -115,7 +115,24 @@ section .threebuttons p {
   color: #ffa161;
 }
 
-img {
+.myFirstApp {
+  display: flex;
+  justify-self: center;
+  border-radius: 60%;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.myFirstApp.gallery:hover {
+  border: 10px solid #777;
+}
+
+.appcap {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 30px;
+}
+
+.me {
     display: block;
     margin-left: auto;
     background-color: #ddd;
@@ -134,7 +151,7 @@ img {
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
   }
-  }
+
 
   @keyframes fadeIn {
     0% {
@@ -191,7 +208,7 @@ img {
     border-radius:40%;
     bottom: 16%;
     left: 90px;
-    min-width: 400px; /* Minimum width of your wrapper element */
+    min-width: 400px; 
     overflow: hidden;
     display: inline-block;
   }
@@ -199,7 +216,7 @@ img {
   .fullcloud {
   }
 
-  .cloud1 {
+  /* .cloud1 {
     position: absolute;
     background-color: #dddddd;
     border-style: solid;
@@ -303,7 +320,7 @@ img {
     z-index: -2;
     bottom: 1%;
     left: 45%;
-  }
+  } */
 
 footer {
   text-align: center;
