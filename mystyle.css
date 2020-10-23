@@ -115,36 +115,38 @@ section .threebuttons p {
   color: #ffa161;
 }
 
+.worksection {
+  border: dotted;
+  margin-bottom: 300px;
+}
+
 .myFirstApp {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: 30%; */
+  margin: auto;
   border-radius: 60%;
   box-shadow: 10px 10px 5px grey;
 }
 
 .first {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin: auto; */
   /* width: 30%; */
 
 }
 
-/* .second {
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+.second {
+  /* float: left; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: auto; */
 
 }
 
 .third {
-  float: right;
-  margin-left: auto;
+  /* float: right; */
+  /* margin-left: auto;
   margin-right: auto;
-  width: auto;
-} */
+  width: auto; */
+}
 
 /* .myFirstApp.gallery:hover {
   border: 10px solid #777;
@@ -156,23 +158,16 @@ section .threebuttons p {
   padding: 30px;
 }
 
-/* .worksection {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
-
 .me {
-    display: block;
-    margin-left: auto;
+    /* display: block; */
+    margin-left: 80%;
     background-color: #ddd;
-    width: 30%;
+    width: 20%;
     border: 5px solid #000;
     padding: 20px;
     border-radius: 50%;
     border-bottom-right-radius: 10px;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .secret-text {
@@ -237,6 +232,7 @@ section .threebuttons p {
     background-color: #dddddd;
     position: absolute;
     border-radius:40%;
+    border: dotted;
     bottom: 16%;
     left: 90px;
     min-width: 400px; 
@@ -245,6 +241,10 @@ section .threebuttons p {
   }
 
   .fullcloud {
+    display: block;
+    position: relative;
+    bottom: 30px;
+    border: solid;
   }
 
   /* .cloud1 {
