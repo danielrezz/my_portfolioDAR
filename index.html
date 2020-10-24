@@ -14,24 +14,19 @@
 <body>
     <main>
         <header>
-            <h1>
-                Hi there
-            </h1>
-            <h1 class="secret-text">
+            <h1 class="hitext">
                 Hi there
             </h1>
         </header>
 
-        <section>
             <div class=threebuttons>
-                <button class="workbutton">Work</button>
+                <a href="#worksection" class="workbutton">Work</a>
                 <p>.</p>
-                <button class="contactbutton">Contact</button>  
+                <a href="#fullcloud" class="aboutbutton">About Me</a>  
                 <p>.</p>
-                <a href="#aboutmecloud" class="aboutbutton">About Me</a>
+                <a href="#contact" class="contactbutton">Contact</a>
                 <p>.</p>
             </div>
-        </section>
 
         <section class="mini-bio">
             <p>
@@ -47,7 +42,7 @@
             </p>
         </section>
 
-        <section class="worksection">
+        <section class="worksection" id="worksection">
             <div class="first">
                 <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="450">
 
@@ -74,22 +69,43 @@
 
         </section>
 
-        <section class="fullcloud">
+        <section class="fullcloud" id="fullcloud">
             <div class="about-me">
-                <a id="aboutmecloud">Heyo this will be the ABOUT ME section where I talk about myself.</a>
+                <a id="aboutmecloud">Heyo this will be the ABOUT ME section where I talk about myself. My name is Daniel and I like music. I play drumes and have played for 10 years. I went to the Art Institute and studied audio production. I love my family.</a>
             </div>
-            <!-- <div class="cloud1"></div>
+            <div class="cloud1"></div>
             <div class="cloud2"></div>
             <div class="cloud3"></div>
             <div class="cloud4"></div>
             <div class="cloud5"></div>
             <div class="cloud6"></div>
             <div class="cloud7"></div>
-            <div class="cloud8"></div> -->
+            <div class="cloud8"></div>
         
             <img src="IMG_5283.png" alt="It's me, Daniel Reza" class="me">
     
         </section>
+
+        <section class="maincontact">
+            <h2 class="contact" id="contact">
+                Contact Info
+            </h2>
+            
+            <br>
+
+            <ul class="contactlist">
+                <li>
+                    <b>Email:</b> daniel.reza1007@gmail.com
+                </li>
+                <li>
+                    <b>Phone:</b> 956.244.5165
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/daniel-reza-974b53a2/" target="_blank">Linkedin Profile</a>
+                </li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
