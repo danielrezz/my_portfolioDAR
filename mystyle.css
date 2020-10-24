@@ -52,7 +52,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   font-size: 100px;
   opacity: 0.6;
 }
@@ -117,42 +116,23 @@ body {
 }
 
 .myFirstApp {
-  /* display: flex;
-  justify-content: center; */
   margin: auto;
   border-radius: 60%;
-  box-shadow: 10px 10px 5px grey;
+  filter: grayscale(90%) opacity(0.7);
+  transition-duration: 0.4s;
 }
 
-.first {
-  /* margin: auto; */
-  /* width: 30%; */
-
+.myFirstApp:hover {
+  box-shadow: 0 12px 16px 0 rgba(252, 252, 252, 0.507), 0 17px 50px 0 rgba(252, 252, 252, 0.507);
+  -webkit-filter: none;
+  filter: none;
 }
-
-.second {
-  /* float: left; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* width: auto; */
-
-}
-
-.third {
-  /* float: right; */
-  /* margin-left: auto;
-  margin-right: auto;
-  width: auto; */
-}
-
-/* .myFirstApp.gallery:hover {
-  border: 10px solid #777;
-} */
 
 .appcap {
   text-align: center;
   font-size: 3.5rem;
   padding: 30px;
+  text-shadow: 0.5px 0.5px 5px #ffffff;
 }
 
 .me {
@@ -183,14 +163,14 @@ body {
     border-color: #ffa061a4;
     border-width: 20px;
     border-radius:20px;
-    overflow: auto;
+    word-wrap: break-word;
   }
 
   .about-me {
     text-align: center;
     font-size: 40px;
     position: absolute;
-    padding: 70px 110px 30px 110px;
+    padding: 70px 110px 35px 110px;
     background-color: #dddddd;
     border-width: 5px;
     height: 42%;
@@ -208,6 +188,7 @@ body {
     position: relative;
     bottom: 30px;
     padding: 25px;
+    opacity: 0.8;
   }
 
   .cloud1 {
@@ -219,6 +200,7 @@ body {
     width: 18%;
     border-radius: 100%;
     top: 15%;
+    filter: blur(0.5px);
   }
 
   .cloud2 {
@@ -232,6 +214,7 @@ body {
     bottom: 25%;
     left: 2%;
     z-index: -3;
+    filter: blur(0.5px);
   }
 
   .cloud3 {
@@ -245,6 +228,7 @@ body {
     z-index: -2;
     top: 10%;
     left: 10%;
+    filter: blur(0.5px);
   }
 
   .cloud4 {
@@ -258,6 +242,7 @@ body {
     z-index: -3;
     top: 5%;
     left: 20%;
+    filter: blur(0.5px);
   }
 
   .cloud5 {
@@ -271,6 +256,7 @@ body {
     z-index: -3;
     top: 18%;
     left: 50%;
+    filter: blur(0.5px);
   }
 
   .cloud6 {
@@ -284,6 +270,7 @@ body {
     z-index: -3;
     bottom: 28%;
     left: 62%;
+    filter: blur(0.5px);
   }
 
   .cloud7 {
@@ -297,6 +284,7 @@ body {
     z-index: -4;
     bottom: 17%;
     left: 12%;
+    filter: blur(0.5px);
   }
 
   .cloud8 {
@@ -310,6 +298,7 @@ body {
     z-index: -4;
     bottom: 18%;
     left: 33%;
+    filter: blur(0.5px);
   }
 
 footer {
