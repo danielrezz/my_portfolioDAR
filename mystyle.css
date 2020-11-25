@@ -48,10 +48,10 @@ body {
 }
 
 .threebuttons {
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   font-size: 100px;
   opacity: 0.6;
 }
@@ -65,6 +65,7 @@ body {
   transition-duration: 0.4s;
   outline: 0;
   text-decoration: none;
+  display: flex;
 }
 
 .workbutton:hover {

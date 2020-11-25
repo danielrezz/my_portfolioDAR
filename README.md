@@ -28,8 +28,10 @@
     Challenges
 </h2>
 
-<pre>
+<p>
     Admittedly, this project had numerous challenges that I encountered (and am still encountering). First of all, getting the format to sit where I wanted it to was a challenge within itself. It took a lot of time figuring out the best way to positions elements. I am actually still working changing up the layout of my app links.
 
+
+
     The biggest challenge was figuring out flexboxes and getting the page to fit correctly on all devices and screen sizes. For some reason, I wasn't able to get it right. Part of me really wantsto start over and figure out where I went wrong with flexboxes, but I will continue troubleshooting to see if I can get to the bottom of it.
-</pre>
+</p>
