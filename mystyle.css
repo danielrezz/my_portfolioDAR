@@ -3,13 +3,21 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: #ffa161;
 }
 
 body {
     font-family: sans-serif;
     margin: 50px;
-    background-color: #ffa161;
+    /* background-color: #ffa161; */
     position: relative;
+    /* overflow: hidden; */
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  /* overflow: scroll; */
 }
 
 .hitext {
@@ -18,28 +26,75 @@ body {
     margin: auto;
     letter-spacing: 2px;
     text-align: center;
-    text-shadow: 6px 6px 8px #ffffffcc;
+    /* text-shadow: 6px 6px 8px #ffffffcc; */
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+    padding-top: 9rem;
+    animation: glow 1.5s infinite alternate, .4s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  to {
+      text-shadow: 6px 6px 8px #ffffffcc;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background: none;
+}
+
+.col {
+  background: none;
+}
+
+#dots {
+  font-size: 5rem;
+  opacity: 0.8;
+  padding: 5px;
+  background: none;
 }
 
 .mini-bio {
     font-size: 46px;
     text-shadow: 0.5px 0.5px 5px #ffffff;
-    position: relative;
+    /* position: relative; */
     text-align: center;
-    margin-bottom: 300px;
+    margin-top: 2rem;
+    margin-bottom: 220px;
     top: 60px;
     left: 25%;
-    width: 50%;
-    padding: 20px 25px 50px 25px;
+    /* width: 50%; */
+    /* padding: 20px 25px 50px 25px; */
     line-height: 1.5;
     border-style: groove;
     border-color: #ffa061a4;
     border-width: 20px;
     border-radius:20px;
-    overflow: auto;
+    animation: .4s ease-out 0s 1 slideUpFromBottom;
+    /* overflow: auto; */
+}
+
+@keyframes slideUpFromBottom {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .navmenu .threebuttons p {
@@ -48,12 +103,14 @@ body {
 }
 
 .threebuttons {
+  background: none;
+  /* padding-bottom: 6rem; */
   /* margin: auto; */
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   /* align-items: center; */
-  font-size: 100px;
-  opacity: 0.6;
+  /* font-size: 100px; */
+  /* opacity: 0.6; */
 }
 
 .workbutton {
@@ -61,17 +118,18 @@ body {
   color: #ffffff;
   border: none;
   background: none;
-  opacity: 0.6;
+  opacity: 0.5;
   transition-duration: 0.4s;
   outline: 0;
   text-decoration: none;
-  display: flex;
+  /* display: flex; */
 }
 
 .workbutton:hover {
   text-shadow: 4px 4px 5px black;
   opacity: 1;
   color: #ffa161;
+  text-decoration: none;
 }
 
 .contactbutton {
@@ -79,7 +137,7 @@ body {
   color: #ffffff;
   border: none;
   background: none;
-  opacity: 0.6;
+  opacity: 0.5;
   transition-duration: 0.4s;
   outline: 0;
   text-decoration: none;
@@ -89,6 +147,7 @@ body {
   text-shadow: 4px 4px 5px black;
   opacity: 1;
   color: #ffa161;
+  text-decoration: none;
 }
 
 .aboutbutton {
@@ -96,7 +155,7 @@ body {
   color: #ffffff;
   border: none;
   background: none;
-  opacity: 0.6;
+  opacity: 0.5;
   transition-duration: 0.4s;
   outline: 0;
   text-decoration: none;
@@ -106,6 +165,7 @@ body {
   text-shadow: 4px 4px 5px black;
   opacity: 1;
   color: #ffa161;
+  text-decoration: none;
 }
 
 .worksection {
@@ -114,6 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 300px;
+  padding-top: 180px;
 }
 
 .myFirstApp {
@@ -121,6 +182,8 @@ body {
   border-radius: 60%;
   filter: grayscale(90%) opacity(0.7);
   transition-duration: 0.4s;
+  margin: 1rem;
+  background: none;
 }
 
 .myFirstApp:hover {

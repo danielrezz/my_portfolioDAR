@@ -6,6 +6,7 @@
     <title>Daniel Reza | Web Developer & Sound Designer</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="icon" 
       type="image/png" 
       href="animated_me.png">
@@ -13,84 +14,108 @@
 
 <body>
     <main>
-        <header>
-            <h1 class="hitext">
-                Hi there
-            </h1>
-        </header>
+        <div id="header">
+            <header>
+                <h1 class="hitext">
+                    Hi there
+                </h1>
+            </header>
+        </div>
 
-            <div class="threebuttons">
-                <a href="#worksection" class="workbutton">Work</a>
-                <p>.</p>
-                <a href="#fullcloud" class="aboutbutton">AboutMe</a>  
-                <p>.</p>
-                <a href="#contact" class="contactbutton">Contact</a>
-                <p>.</p>
+            <div class="threebuttons container">
+                <div class="row align-items-center text-center fixed-top .p-3">
+                    <div id="button1" class="col">
+                        <a href="#worksection" class="workbutton">Work</a>
+                    </div>
+                        <!-- <p id="dots">.</p> -->
+                    <div id="button2" class="col">
+                        <a href="#fullcloud" class="aboutbutton">AboutMe</a>  
+                    </div>
+                        <!-- <p id="dots">.</p> -->
+                    <div id="button3" class="col">
+                        <a href="#contact" class="contactbutton">Contact</a>
+                    </div>
+                        <!-- <p id="dots">.</p> -->
+                </div>
             </div>
 
-        <section class="mini-bio">
-            <p>
-                Thanks for checking out my site! 
-            <br>
-                Here you'll find how I spend a lot of my time: 
-            <br>
-                Fusing music and technology. 
-            <br>
-                Feel free to browse around and check out some of my work. 
-            <br>
-                If you'd like to get in touch, just give me a holler.
-            </p>
+        <div class="mini-bio container">
+            <div class="row">
+                <div class="col-lg">
+                    <p>
+                        Thanks for checking out my site! 
+                    <br>
+                        Here you'll find how I spend a lot of my time: 
+                    <br>
+                        Fusing music and technology. 
+                    <br>
+                        Feel free to browse around and check out some of my work. 
+                    <br>
+                        If you'd like to get in touch, just give me a holler.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="worksection container" id="worksection">
+            <div class="row">
+                <div class="firstApp col-xl-6">
+                    <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" target="_blank">
+                        <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="300">
+                    </a>
+                </div>
+
+                <!-- <div class="firstAppCap">
+                    <figcaption class="appcap">
+                        This is my first app
+                    </figcaption>
+                </div> -->
+
+                <div class="secondApp col-xl-6">
+                    <a href="WIP.png" target="_blank">
+                        <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="300">
+                    </a>
+                </div>
+
+                <!-- <div class="SecondAppCap"></div>
+                    <figcaption class="appcap">
+                        My Second App
+                    </figcaption>
+                </div> -->
+
+                <div class="thirdApp col-xl-6">
+                    <a href="WIP.png" target="_blank">
+                        <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="300">
+                    </a>
+                </div>
+
+                <!-- <div class="thirdAppCap">
+                    <figcaption class="appcap">
+                        My Third App
+                    </figcaption>
+                </div> -->
+            </div>
         </section>
 
-        <section class="worksection" id="worksection">
-            <div class="first">
-                <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" target="_blank">
-                    <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="450">
-                </a>
-
-                <figcaption class="appcap">
-                    This is my first app
-                </figcaption>
-            </div>
-
-            <div class="second">
-                <a href="WIP.png" target="_blank">
-                    <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="350">
-                </a>
-
-                <figcaption class="appcap">
-                    My Second App
-                </figcaption>
-            </div>
-
-            <div class="third">
-                <a href="WIP.png" target="_blank">
-                    <img src="myFirstApp.jpg" alt="Phone Apps" class="myFirstApp" height="350">
-                </a>
-
-                <figcaption class="appcap">
-                    My Third App
-                </figcaption>
-            </div>
-
-        </section>
-
-        <section class="fullcloud" id="fullcloud">
+        <div class="fullcloud" id="fullcloud">
             <div class="about-me">
                 <a id="aboutmecloud">My name is Daniel and I’m a musician and audio engineer living in Austin, TX. Music had always been a part of my life growing up - from forming garage rock bands to playing on the high school drum line - and it continues to be. This led me to pursue audio engineering at the Art Institute of Austin in which I found a knack for post-production. Over the years, I have gathered experience and skills that have allowed me to work on numerous independent films, music projects, and podcasts. I am currently enrolled in the Coding Bootcamp at UT Austin to learn how to code. My main goal is to bring coding into my audio work and create something exciting!</a>
             </div>
-            <div class="cloud1"></div>
-            <div class="cloud2"></div>
-            <div class="cloud3"></div>
-            <div class="cloud4"></div>
-            <div class="cloud5"></div>
-            <div class="cloud6"></div>
-            <div class="cloud7"></div>
-            <div class="cloud8"></div>
+
+            <div class="innerfullcloud">
+                <div class="cloud1"></div>
+                <div class="cloud2"></div>
+                <div class="cloud3"></div>
+                <div class="cloud4"></div>
+                <div class="cloud5"></div>
+                <div class="cloud6"></div>
+                <div class="cloud7"></div>
+                <div class="cloud8"></div>
+            </div>
         
             <img src="IMG_5283.png" alt="It's me, Daniel Reza" class="me">
     
-        </section>
+        </div>
 
         <section class="maincontact">
             <h2 class="contact" id="contact">
@@ -112,11 +137,13 @@
             </ul>
         </section>
 
+    
+        <footer>
+            Made by me.
+        </footer>
+
     </main>
 
-    <footer>
-        Made by me.
-    </footer>
-
 </body>
+<!-- <script src="script.js"></script> -->
 </html>
