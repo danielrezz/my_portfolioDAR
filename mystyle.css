@@ -4,10 +4,11 @@
     margin: 0;
     scroll-behavior: smooth;
     background-color: #ffa161;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
-    font-family: sans-serif;
+    
     margin: 50px;
     /* background-color: #ffa161; */
     position: relative;
@@ -31,7 +32,7 @@ main {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    padding-top: 9rem;
+    padding-top: 8rem;
     animation: glow 1.5s infinite alternate, .4s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -169,6 +170,7 @@ main {
 }
 
 .worksection {
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,7 +182,7 @@ main {
 .myFirstApp {
   margin: auto;
   border-radius: 60%;
-  filter: grayscale(90%) opacity(0.7);
+  filter: grayscale(90%) opacity(0.5);
   transition-duration: 0.4s;
   margin: 1rem;
   background: none;
@@ -190,6 +192,54 @@ main {
   box-shadow: 0 12px 16px 0 rgba(252, 252, 252, 0.507), 0 17px 50px 0 rgba(252, 252, 252, 0.507);
   -webkit-filter: none;
   filter: none;
+  background: none;
+}
+
+.description {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 40%;
+  font-size: 46px;
+  background: none;
+  color: black;
+  z-index: 1;
+  transition-duration: 0.1s;
+  text-shadow: 2.5px 2.5px 5px #ffffff;
+}
+
+.secondApp:hover .description {
+  visibility: hidden;
+  opacity: 0.3;
+}
+
+.firstApp:hover .description {
+  visibility: hidden;
+  opacity: 0.3;
+}
+
+.thirdApp:hover .description {
+  visibility: hidden;
+  opacity: 0.3;
+}
+
+.firstApp {
+  background: none;
+  text-align: center;
+  border-radius: 60%;
+}
+
+.secondApp {
+  background: none;
+  text-align: center;
+  border-radius: 60%;
+}
+
+.thirdApp {
+  background: none;
+  text-align: center;
+  border-radius: 60%;
 }
 
 .appcap {
@@ -200,14 +250,24 @@ main {
 }
 
 .me {
-    margin-left: auto;
-    position: relative;
+    display: flex;
+    margin-left: 78%;
+    margin-top: 9%;
+    position: absolute;
     background-color: #ddd;
-    width: 20%;
+    width: 19%;
     border: 5px solid #000;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 60%;
     border-bottom-right-radius: 10px;
+    height: 58%;
+    animation: glow2 1.5s infinite alternate;
+}
+
+@keyframes glow2 {
+  to {
+      box-shadow: 6px 6px 6px 8px #ffffffcc;
+  }
 }
 
  .contactlist {
@@ -221,13 +281,15 @@ main {
     text-align: center;
     left: 25%;
     width: 50%;
-    padding: 20px 25px 50px 25px;
+    height: 73%;
+    padding: 0px 25px 50px 25px;
     line-height: 1.5;
     border-style: groove;
     border-color: #ffa061a4;
     border-width: 20px;
     border-radius:20px;
     word-wrap: break-word;
+    margin-top: 22rem;
   }
 
   .about-me {
@@ -237,7 +299,7 @@ main {
     padding: 70px 110px 35px 110px;
     background-color: #dddddd;
     border-width: 5px;
-    height: 42%;
+    height: 47%;
     width: 60%;
     border-radius: 40%;
     z-index: 1;
@@ -246,13 +308,45 @@ main {
     overflow: auto;
   }
 
+  .about-me::-webkit-scrollbar {
+    display: none;
+  }
+
+  #aboutmecloud {
+    margin-top: 12rem;
+  }
+
+  .resume {
+    text-align: center;
+  }
+
+  .resumebutton {
+    font-size: 100px;
+    color: #ffffff;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    outline: 0;
+  }
+
+  .resumebutton:hover {
+    text-shadow: 4px 4px 5px black;
+    opacity: 1;
+    color: #ffa161;
+  }
+
   .fullcloud {
     display: flex;
-    justify-content: flex-start;
+    justify-items: center;
     position: relative;
     bottom: 30px;
     padding: 25px;
     opacity: 0.8;
+    margin-bottom: 0.5rem;
+    height: 70%;
+    width: 100%;
+    animation: glow 1.5s infinite alternate;
   }
 
   .cloud1 {
@@ -260,11 +354,12 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 40%;
+    height: 45%;
     width: 18%;
     border-radius: 100%;
     top: 15%;
     filter: blur(0.5px);
+    animation: glow2 1.5s infinite alternate;
   }
 
   .cloud2 {
@@ -272,13 +367,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 30%;
+    height: 40%;
     width: 18%;
     border-radius: 100%;
     bottom: 25%;
     left: 2%;
     z-index: -3;
     filter: blur(0.5px);
+    animation: glow2 1s infinite alternate;
   }
 
   .cloud3 {
@@ -286,13 +382,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 40%;
+    height: 50%;
     width: 18%;
     border-radius: 100%;
     z-index: -2;
     top: 10%;
     left: 10%;
     filter: blur(0.5px);
+    animation: glow2 2.5s infinite alternate;
   }
 
   .cloud4 {
@@ -300,13 +397,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 40%;
+    height: 50%;
     width: 38%;
     border-radius: 100%;
     z-index: -3;
     top: 5%;
     left: 20%;
     filter: blur(0.5px);
+    animation: glow2 1.3s infinite alternate;
   }
 
   .cloud5 {
@@ -314,13 +412,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 40%;
+    height: 50%;
     width: 22%;
     border-radius: 100%;
     z-index: -3;
     top: 18%;
     left: 50%;
     filter: blur(0.5px);
+    animation: glow2 1.1s infinite alternate;
   }
 
   .cloud6 {
@@ -328,13 +427,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 40%;
+    height: 50%;
     width: 18%;
     border-radius: 100%;
     z-index: -3;
     bottom: 28%;
     left: 62%;
     filter: blur(0.5px);
+    animation: glow2 2s infinite alternate;
   }
 
   .cloud7 {
@@ -342,13 +442,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 30%;
+    height: 40%;
     width: 28%;
     border-radius: 100%;
     z-index: -4;
     bottom: 17%;
     left: 12%;
     filter: blur(0.5px);
+    animation: glow2 1s infinite alternate;
   }
 
   .cloud8 {
@@ -356,13 +457,14 @@ main {
     background-color: #dddddd;
     border-style: solid;
     border-width: 5px;
-    height: 35%;
+    height: 45%;
     width: 35%;
     border-radius: 100%;
-    z-index: -4;
+    z-index: -2;
     bottom: 18%;
     left: 33%;
     filter: blur(0.5px);
+    animation: glow2 1.5s infinite alternate;
   }
 
 footer {
