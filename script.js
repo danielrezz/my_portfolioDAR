@@ -15,3 +15,11 @@ scrollBtn.onclick = function(e) {
         document.documentElement.scrollTop = 0;
     };
 };
+
+var resumeImage = document.querySelector("#resumeImage");
+var resumeButton = document.querySelector(".resumeButton");
+
+resumeButton.onclick = function(e) {
+  e.preventDefault();
+  resumeImage.removeAttribute("style");
+}

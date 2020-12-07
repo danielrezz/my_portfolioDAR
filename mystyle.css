@@ -358,7 +358,7 @@ main {
     text-align: center;
   }
 
-  .resumebutton {
+  .resumeButton {
     font-size: 100px;
     color: black;
     border: none;
@@ -368,10 +368,14 @@ main {
     outline: 0;
   }
 
-  .resumebutton:hover {
+  .resumeButton:hover {
     text-shadow: 4px 4px 5px black;
     opacity: 1;
     color: #ffa161;
+  }
+
+  #resumeImage {
+    /* display: none; */
   }
 
   .fullcloud {
