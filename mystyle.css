@@ -169,6 +169,29 @@ main {
   text-decoration: none;
 }
 
+#scrollBtn {
+  float: right;
+  position: fixed;
+  transform: rotate(-90deg);
+  padding-bottom: 5.5rem;
+  bottom: 2.8rem;
+  right: 10rem;
+  width: 65px;
+  height: 70px;
+  text-align: center;
+  font-size: 50px;
+  border-style: none;
+  background: none;
+  opacity: 0.6;
+  /* animation: glow3 3s infinite alternate; */
+}
+
+@keyframes glow3 {
+  to {
+      box-shadow: 1px 1px 1px 2px white;
+  }
+}
+
 .worksection {
   width: auto;
   display: flex;
@@ -274,15 +297,21 @@ main {
     list-style: none;
  }
 
+  .contact {
+    font-size: 4.2rem;
+  }
+
   .maincontact {
-    font-size: 46px;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 4rem;
     text-shadow: 0.5px 0.5px 5px #ffffff;
     position: relative;
     text-align: center;
     left: 25%;
     width: 50%;
     height: 73%;
-    padding: 0px 25px 50px 25px;
+    padding: 25px;
     line-height: 1.5;
     border-style: groove;
     border-color: #ffa061a4;
@@ -291,6 +320,15 @@ main {
     word-wrap: break-word;
     margin-top: 22rem;
   }
+
+  /* .li1 {
+    transition-duration: 0.5s;
+  }
+
+  .li1:hover {
+    opacity: 0;
+    font: ;
+  } */
 
   .about-me {
     text-align: center;
@@ -322,7 +360,7 @@ main {
 
   .resumebutton {
     font-size: 100px;
-    color: #ffffff;
+    color: black;
     border: none;
     background: none;
     opacity: 0.5;
