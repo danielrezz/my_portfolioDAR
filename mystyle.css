@@ -36,6 +36,11 @@ main {
     animation: glow 1.5s infinite alternate, .4s ease-out 0s 1 slideInFromLeft;
 }
 
+#header {
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateY(-100%);
@@ -513,4 +518,11 @@ footer {
   text-align: center;
   margin: auto;
   padding: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .hitext {
+    font-size: 100px;
+  }
 }
