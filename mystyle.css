@@ -110,6 +110,7 @@ main {
 
 .threebuttons {
   background: none;
+  position: relative;
   /* padding-bottom: 6rem; */
   /* margin: auto; */
   /* display: flex; */
@@ -520,9 +521,133 @@ footer {
   padding: 20px;
 }
 
+@media screen and (max-width: 1098px) {
+  .hitext {
+    font-size: 150px;
+    padding-top: 4rem;
+  }
+  .workbutton {
+    font-size: 60px;
+  }
+  .aboutbutton {
+    font-size: 60px;
+  }
+  .contactbutton {
+    font-size: 60px;
+  }
+  .resumeButton {
+    font-size: 60px;
+  }
+  .mini-bio {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
 
-@media screen and (max-width: 600px) {
+  .worksection {
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .row .firstApp {
+    width: 80%;
+    height: 80%;
+
+  }
+  .row .secondApp {
+    width: 80%;
+    height: 80%;
+
+  }
+  .row .thirdApp {
+    width: 80%;
+    height: 80%;
+  }
+  .fullcloud {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+  }
+  .me{
+    height: 42%;
+    margin-left: 76.5%;
+    margin-top: 17%;
+  }
+  #aboutmecloud {
+    font-size: 28px;
+  }
+  .maincontact {
+    margin-top: 100px;
+    font-size: 40px;
+    height: 43%;
+  }
+  #scrollBtn {
+    right: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
   .hitext {
     font-size: 100px;
+  }
+  .workbutton {
+    font-size: 40px;
+  }
+  .aboutbutton {
+    font-size: 40px;
+  }
+  .contactbutton {
+    font-size: 40px;
+  }
+  .resumeButton {
+    font-size: 40px;
+  }
+  .mini-bio {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  .worksection {
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+  .description {
+    font-size: 28px;
+  }
+
+  .row .firstApp {
+    width: 68%;
+    height: 68%;
+
+  }
+  .row .secondApp {
+    width: 68%;
+    height: 68%;
+
+  }
+  .row .thirdApp {
+    width: 68%;
+    height: 68%;
+  }
+  .fullcloud {
+    height: 40%;
+    width: 100%;
+    margin: auto;
+  }
+  .me{
+    height: 38%;
+    margin-left: 76.5%;
+    margin-top: 17%;
+  }
+  #aboutmecloud {
+    font-size: 22px;
+  }
+  .maincontact {
+    margin-top: 80px;
+    font-size: 24px;
+    height: 26%;
+    padding: 10px;
+  }
+  #scrollBtn {
+    display: none;
   }
 }
