@@ -7,10 +7,10 @@
 </h2>
 
 <p>
-    This here is my new portfolio. It was all made using HTML and CSS and took about a week to complete. It is still a work in progress, but eventually this portfolio will include all of my work as a web developer and audio engineer.
+    This here is my updated portfolio. It was all made using HTML and CSS with even a little Javascript. Eventually this portfolio will include all of my work as a web developer and audio engineer.
 </p>
 
-<img src="Screen Shot 2020-10-24 at 12.45.48 AM.png">
+<img src="Screen Shot 2020-12-07 at 10.33.46 PM.png">
 
 <p>
     The way I chose to approach this was simplicity. I wanted to keep things clean and minimal, yet smooth. Orange is my favorite color so I figured using a pastel version mixed with some opacity throughout the site would help accomplish that feeling.
@@ -21,7 +21,7 @@
 </h2>
 
 <p>
-    Within my portfolio, you will currently find stock images where future completed projects will go. You will also find videos of my past audio projects and eventually some links to music and podcasts. My contact information and a short bio are also found here.
+    Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
 </p>
 
 <h2>
@@ -29,9 +29,7 @@
 </h2>
 
 <p>
-    Admittedly, this project had numerous challenges that I encountered (and am still encountering). First of all, getting the format to sit where I wanted it to was a challenge within itself. It took a lot of time figuring out the best way to positions elements. I am actually still working changing up the layout of my app links.
+    There are still plenty of challenges for me when it comes to web development, but I felt much more comfortable working on this the second time around. I was able to go back in and adjust things to sit more naturally, as well as update fonts and features.
 
-
-
-    The biggest challenge was figuring out flexboxes and getting the page to fit correctly on all devices and screen sizes. For some reason, I wasn't able to get it right. Part of me really wantsto start over and figure out where I went wrong with flexboxes, but I will continue troubleshooting to see if I can get to the bottom of it.
+    The main challenge this time around was the Javascript to get the scroll-to-top button working.
 </p>
