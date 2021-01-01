@@ -414,6 +414,10 @@ main {
     display: none;
   }
 
+  .about-me2 {
+    visibility: hidden;
+  }
+
   #aboutmecloud {
     margin-top: 12rem;
   }
@@ -463,6 +467,7 @@ main {
     height: 45%;
     width: 18%;
     border-radius: 100%;
+    left: 2%;
     top: 15%;
     filter: blur(0.5px);
     animation: glow2 1.5s infinite alternate;
@@ -782,7 +787,7 @@ footer {
   }
   .maincontact {
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 22px;
     padding: 0px;
     left: 5%;
     height: auto;
@@ -798,21 +803,26 @@ footer {
   visibility: hidden;
 }
 
-.about-me {
+.about-me2 {
   visibility: visible;
+  font-size: 22px;
   text-align: center;
-  font-size: 20px;
-  /* position: absolute; */
-  /* padding: 70px 110px 35px 110px; */
-  background-color: #dddddd;
-  border-width: 5px;
-  /* height: 47%; */
-  /* width: 60%; */
-  /* border-radius: 40%; */
-  z-index: 1;
-  /* top: 23%; */
-  /* left: 10%; */
-  /* overflow: auto; */
+  margin: auto;
+  padding: auto;
+  overflow:auto;
+  height: 95%;
+  border-style: groove;
+  border-color: #ffa061a4;
+  border-width: 20px;
+  border-radius:20px;
+  filter: none;
+  z-index: 3;
+}
+
+.me2 {
+  height: auto;
+  width: 50%;
+  border-radius: 20px;
 }
 
 }
