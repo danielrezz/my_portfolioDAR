@@ -32,8 +32,8 @@ main {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    padding-top: 8rem;
-    animation: glow 1.5s infinite alternate, .4s ease-out 0s 1 slideInFromLeft;
+    padding-top: 4rem;
+    animation: glow 1.5s infinite alternate, .6s ease-out 0s 1 slideInFromLeft;
 }
 
 #header {
@@ -148,7 +148,7 @@ main {
     border-color: #ffa061a4;
     border-width: 20px;
     border-radius:20px;
-    animation: .4s ease-out 0s 1 slideUpFromBottom;
+    animation: .6s ease-out 0s 1 slideUpFromBottom;
     /* overflow: auto; */
 }
 
@@ -250,11 +250,11 @@ main {
   /* animation: glow3 3s infinite alternate; */
 }
 
-@keyframes glow3 {
+/* @keyframes glow3 {
   to {
       box-shadow: 1px 1px 1px 2px white;
   }
-}
+} */
 
 .worksection {
   width: auto;
@@ -432,7 +432,7 @@ main {
     border: none;
     background: none;
     opacity: 0.5;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     outline: 0;
   }
 
@@ -452,6 +452,7 @@ main {
     position: relative;
     bottom: 30px;
     padding: 25px;
+    /* padding-top: 3rem; */
     opacity: 0.8;
     margin-bottom: 0.5rem;
     height: 70%;
@@ -576,6 +577,68 @@ main {
     left: 33%;
     filter: blur(0.5px);
     animation: glow2 1.5s infinite alternate;
+  }
+
+  #floatingInput {
+    width: 50%;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
+    color: black;
+    opacity: 0.8;
+  }
+
+  #floatingPassword {
+    width: 50%;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
+    color: black;
+    opacity: 0.8;
+  }
+
+  #labelname {
+    font-size: 28px;
+    display: block;
+    text-align: left;
+    /* float: left; */
+  }
+
+  .sendbtn {
+    margin-top: 18px;
+    margin-right: 16%;
+    border-style: none;
+    float: right;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    outline: 0;
+    background: none;
+  }
+
+  .sendbtn:hover {
+    text-shadow: 4px 4px 5px rgba(252, 252, 252, 0.507);
+    opacity: 0.9;
+  }
+
+  .sendbtn:focus {
+    outline-style: none;
+  }
+
+  #icon {
+    width: 15%;
+    height: 23%;
+    border-radius: 50%;
+    margin-top: 2.5rem;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    outline: 0;
+  }
+
+  #icon:hover {
+    box-shadow: 0 2px 16px 0 rgba(252, 252, 252, 0.507), 0 17px 50px 0 rgba(252, 252, 252, 0.507);
+    text-shadow: 4px 4px 5px black;
+    opacity: 1;
+    color: #ffa161;
   }
 
 footer {
@@ -704,6 +767,7 @@ footer {
   #aboutmecloud {
     font-size: 22px;
   }
+
   .maincontact {
     margin-top: 80px;
     font-size: 24px;

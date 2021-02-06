@@ -9,6 +9,7 @@
     <link href="path/to/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" 
       type="image/png" 
       href="animated_me.png">
@@ -102,6 +103,7 @@
 
             </div>
         </div>
+        
 
         <div class="fullcloud" id="fullcloud">
             <div class="about-me">
@@ -135,10 +137,9 @@
         <!-- <a href="Resume 12_2020.jpg" data-lightbox="image-1" data-title="My resume">résumé</a> -->
 
         <div class="maincontact">
-            <h2 class="contact" id="contact">
-            </h2>
+            <h2 class="contact" id="contact" style="font-size:52px">Send me a message</h2>
 
-            <ul class="contactlist">
+            <!-- <ul class="contactlist">
                 <li class="li1">
                     <b>Email:</b> daniel.reza1007@gmail.com
                 </li>
@@ -151,7 +152,28 @@
                 <li class="li4">
                     <a href="https://github.com/danielrezz" target="_blank">Github</a>
                 </li>
-            </ul>
+            </ul> -->
+
+            <div class="form-floating mb-3">
+                <label for="floatingInput" id="labelname">Name</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <button type="submit" class="fa fa-paper-plane-o sendbtn" style="font-size:150px"></button>
+            </div>
+              <div class="form-floating">
+                <label for="floatingPassword" id="labelname">Email</label>
+                <input type="email" class="form-control" id="floatingPassword" placeholder="">
+              </div>
+
+              <div class="form-floating" style="padding-top:15px; background:none">
+                <label for="floatingTextarea" id="labelname">Words</label>
+                <textarea type="text" class="form-control" placeholder="What can I do for you?" id="floatingInput"></textarea>
+              </div>
+
+              <a href="https://www.instagram.com/daniel_rezz/" target="__blank"><img src="./001-instagram.png" id="icon"></a>
+              <a href="https://www.linkedin.com/in/daniel-reza-974b53a2/" target="__blank"><img src="./002-linkedin.png" id="icon"></a>
+              <a href="https://github.com/danielrezz" target="__blank"><img src="./003-github-logo.png" id="icon"></a>
+
+
         </div>
 
     
@@ -164,4 +186,5 @@
 </body>
 <script src="script.js"></script>
 <script src="dist/js/lightbox-plus-jquery.js"></script>
+
 </html>
