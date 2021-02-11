@@ -586,6 +586,7 @@ main {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
     color: black;
     opacity: 0.8;
+    margin-bottom: 10px;
   }
 
   #floatingPassword {
