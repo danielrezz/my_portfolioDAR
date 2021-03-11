@@ -385,6 +385,10 @@ main {
     margin-top: 22rem;
   }
 
+  .iconblock {
+    margin-top: 20px;
+  }
+
   /* .li1 {
     transition-duration: 0.5s;
   }
